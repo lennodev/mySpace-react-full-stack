@@ -250,7 +250,7 @@ function App() {
                   variant="body2"
                   color="textSecondary"
                 >
-                  Hi Peter!
+                  Hi User!
 
                 </Typography>
               </div>
