@@ -104,7 +104,7 @@ export default (app: Router) => {
     '/public',
     async (req: Request, res: Response, next: NextFunction) => {
       logger.debug(`Calling public endpoint${JSON.stringify(req.user)}`);
-      res.send('Success');
+      res.send(`Success ${new Date()}`);
     }
   );
 
