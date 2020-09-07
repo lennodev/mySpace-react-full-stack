@@ -8,8 +8,8 @@ import AuthTrans from '../interfaces/AuthTrans';
 import UserTrans from '../interfaces/UserTrans';
 
 import User from '../models/User';
-import Constants from '../Constants/Role';
-import MessageCd from '../Constants/MessageCd';
+import Constants from '../constants/Role';
+import MessageCd from '../constants/MessageCd';
 
 import OperationResult from '../util/operationResult';
 

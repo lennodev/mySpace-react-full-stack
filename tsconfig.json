@@ -10,7 +10,8 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "pretty": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
   },
   "include": [
     "./src/server/**/*"

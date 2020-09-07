@@ -9,7 +9,7 @@ import Grid from '../models/Grid';
 import Item from '../models/Item';
 import Space from '../models/Space';
 import OperationResult from '../util/operationResult';
-import MessageCd from '../Constants/MessageCd';
+import MessageCd from '../constants/MessageCd';
 
 @Service()
 export default class SpaceService {
