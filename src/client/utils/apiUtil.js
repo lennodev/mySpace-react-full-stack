@@ -3,8 +3,9 @@ import OperationResult from './operationResult';
 import Configs from '../config/index';
 import * as MessageCd from '../constants/MessageCd';
 
+axios.defaults.baseURL = `https://${Configs.BACKEND_SERVER_ENDPOINT}:${Configs.BACKEND_SERVER_PORT}`;
 
-export const API_HOST = `${Configs.BACKEND_SERVER_URL}/api`;
+export const API_HOST = '/api';
 
 export const API_INVOKE_TYPE_GET = 'GET';
 export const API_INVOKE_TYPE_POST = 'POST';
@@ -100,6 +101,8 @@ export const invokeApi = async (invokeMethod, url, data, fileMap = null) => {
       };
     }
 
+    console.log(`Axios: https://${Configs.BACKEND_SERVER_ENDPOINT}:${Configs.BACKEND_SERVER_PORT}`);
+    console.log(`Axios: URL:${url}`);
     switch (invokeMethod) {
       case API_INVOKE_TYPE_GET:
         response = await axios.get(url);
