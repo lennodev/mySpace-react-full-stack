@@ -3,11 +3,14 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import morgan from 'morgan';
 import passport from 'passport';
+import helmet from 'helmet';
 import routes from '../api';
 import config from '../config';
 import passportStrategy from './passport';
 
 export default ({ app }: { app: express.Application }) => {
+  app.use(helmet());
+
   app.get('/status', (req, res) => {
     res.status(200).end();
   });
