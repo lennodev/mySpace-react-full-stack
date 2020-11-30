@@ -1,5 +1,5 @@
 {
-    "development-aws": {
+    "development": {
         "username": "backend_user",
         "password": "12345678",
         "database": "ebdb",
@@ -9,7 +9,7 @@
         "logging": false,
         "repositoryMode": true
     },
-    "development": {
+    "development-local": {
         "username": "backend_user",
         "password": "12345678",
         "database": "spaceMaster",
