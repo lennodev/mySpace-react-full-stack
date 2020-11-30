@@ -6,7 +6,7 @@
   "scripts": {
     "build-client": "webpack --mode production --config ./webpack.react.config.js",
     "build-server": "tsc",
-    "start": "npm run build-server && node dist/server/index.js",
+    "start": "npm run build-server && node public_dist/server/index.js",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot --config ./webpack.react.config.js --host 0.0.0.0",
     "server": "nodemon src/server/index.ts",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
