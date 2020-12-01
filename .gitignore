@@ -7,3 +7,4 @@ yarn.lock
 public/upload/images/
 bundle
 /aws
+sequelize-config.json
