@@ -11,7 +11,8 @@ try {
   let dbConnPath = '/app_configs/db/sequelize-config.json';
   if (!fs.existsSync(dbConnPath)) {
     // use local
-    dbConnPath = './sequelize-config.json';
+    dbConnPath = './local_configs/db/sequelize-config.json';
+    console.log('Using local db connection');
   }
 
   const rawdata = fs.readFileSync(dbConnPath);

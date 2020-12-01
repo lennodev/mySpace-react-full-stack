@@ -1,9 +1,24 @@
 import dotenv from 'dotenv';
+import fs from 'fs';
 
-const envFound = dotenv.config();
-if (!envFound) {
-  throw new Error("Couldn't find .env file");
+let envFound = null;
+
+try {
+  let configPath = '/app_configs/platform/.env';
+  if (!fs.existsSync(configPath)) {
+    // use local
+    configPath = './local_configs/platform/.env';
+    console.log('Using local .env');
+  }
+
+  envFound = dotenv.config({ path: configPath });
+  if (!envFound) {
+    throw new Error("Couldn't find .env file");
+  }
+} catch (err) {
+  console.error(err);
 }
+
 
 export default {
   /**
