@@ -1,6 +1,6 @@
 {
   "name": "spaceMaster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SpaceMaster is a full stack web application using React, Node.js, Express and Webpack.",
   "engines": {
     "node": "12.18.4"
