@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SpaceMaster is a full stack web application using React, Node.js, Express and Webpack.",
   "engines": {
-    "node": ">=v12.10.0"
+    "node": "v12.18.4"
   },
   "scripts": {
     "build-client": "webpack --mode production --env.ENVIRONMENT=production --config ./webpack.react.config.js",
