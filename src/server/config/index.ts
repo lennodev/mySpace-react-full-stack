@@ -4,14 +4,15 @@ import fs from 'fs';
 let envFound = null;
 
 try {
-  let configPath = '/app_configs/platform/.env';
-  if (!fs.existsSync(configPath)) {
-    // use local
-    configPath = './local_configs/platform/.env';
-    console.log('Using local .env');
-  }
+  // const configPath = '../../.env';
+  // if (!fs.existsSync(configPath)) {
+  //   // use local
+  //   configPath = './local_configs/platform/.env';
+  //   console.log('Using local .env');
+  // }
 
-  envFound = dotenv.config({ path: configPath });
+  // envFound = dotenv.config({ path: configPath });
+  envFound = dotenv.config();
   if (!envFound) {
     throw new Error("Couldn't find .env file");
   }
