@@ -36,7 +36,7 @@ async function startServer() {
     // }
     Logger.info(`
             ################################################
-            🛡️  Server listening on port: ${config.port} 🛡️
+             Server listening on port: ${config.port} 
             ################################################
             `);
   });
