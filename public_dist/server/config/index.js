@@ -4,9 +4,22 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv_1 = __importDefault(require("dotenv"));
-const envFound = dotenv_1.default.config();
-if (!envFound) {
-    throw new Error("Couldn't find .env file");
+let envFound = null;
+try {
+    // const configPath = '../../.env';
+    // if (!fs.existsSync(configPath)) {
+    //   // use local
+    //   configPath = './local_configs/platform/.env';
+    //   console.log('Using local .env');
+    // }
+    // envFound = dotenv.config({ path: configPath });
+    envFound = dotenv_1.default.config();
+    if (!envFound) {
+        throw new Error("Couldn't find .env file");
+    }
+}
+catch (err) {
+    console.error(err);
 }
 exports.default = {
     /**
