@@ -9,7 +9,7 @@
     "build-client": "webpack --mode production --env.ENVIRONMENT=production --config ./webpack.react.config.js",
     "build-client-local": "webpack --mode development --env.ENVIRONMENT=development --config ./webpack.react.config.js",
     "build-server": "tsc",
-    "start":"",
+    "start":"node public_dist/server/index.js",
     "start-bak": "npm run build-server && node public_dist/server/index.js",
     "start-wo-build": "node public_dist/server/index.js",
     "client": "webpack-dev-server --mode development --env.ENVIRONMENT=development --devtool inline-source-map --hot --config ./webpack.react.config.js --host 0.0.0.0",
