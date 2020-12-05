@@ -11,3 +11,5 @@ db_conn.json
 /local_configs
 .env*
 public_dist/
+certs/
+.DS_Store
