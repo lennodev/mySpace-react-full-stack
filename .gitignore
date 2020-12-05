@@ -10,3 +10,4 @@ bundle
 db_conn.json
 /local_configs
 .env*
+public_dist/
